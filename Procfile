@@ -1,0 +1,1 @@
+web: gunicorn electricity_project.wsgi:application
