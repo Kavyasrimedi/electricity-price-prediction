@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Electricity Price Prediction</title>
+
+    <style>
+        body {
+            background: #0f172a;
+            color: white;
+            font-family: Arial;
+            text-align: center;
+        }
+
+        h1 {
+            color: #38bdf8;
+        }
+
+        input {
+            padding: 10px;
+            margin: 5px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            background: #38bdf8;
+            border: none;
+            cursor: pointer;
+        }
+
+        .result {
+            margin-top: 20px;
+            color: #22c55e;
+            font-size: 20px;
+        }
+    </style>
+
+</head>
+
+<body>
+
+<h1>⚡ Electricity Price Prediction</h1>
+
+<form action="/predict/" method="post">
+    {% csrf_token %}
+
+    <input name="holidayflag" placeholder="Holiday Flag (0/1)" required><br>
+    <input name="forecastwind" placeholder="Forecast Wind Production" required><br>
+    <input name="systemloadea" placeholder="System Load EA" required><br>
+    <input name="smpea" placeholder="SMPEA" required><br>
+    <input name="temperature" placeholder="Temperature" required><br>
+    <input name="windspeed" placeholder="Wind Speed" required><br>
+    <input name="co2" placeholder="CO2 Intensity" required><br>
+    <input name="actualwind" placeholder="Actual Wind Production" required><br>
+    <input name="systemloadep2" placeholder="System Load EP2" required><br>
+    <input name="hour" placeholder="Hour (0-23)" required><br>
+    <input name="day" placeholder="Day" required><br>
+    <input name="month" placeholder="Month" required><br>
+
+    <br>
+    <button type="submit">Predict</button>
+</form>
+
+<div class="result">
+    {{ result }}
+</div>
+
+</body>
+</html>
