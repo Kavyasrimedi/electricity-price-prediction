@@ -165,6 +165,16 @@ http://127.0.0.1:8000/
 
 ---
 
+## Outputs 
+
+Have a look at the results :<br>
+<img width="580" height="750" alt="op1" src="https://github.com/user-attachments/assets/ff57581d-98f2-4da6-832e-20ebf6a682d0" />
+<img width="580" height="750" alt="op2" src="https://github.com/user-attachments/assets/a014095e-569f-40ff-bede-0fb2831752e1" />
+<img width="580" height="750" alt="op3" src="https://github.com/user-attachments/assets/fb8b8339-b269-4b28-afa3-2e2a17d76b1f" />
+
+
+
+
 ## Author
 
 **Kavya Sri**
