@@ -4,9 +4,10 @@ import numpy as np
 import os
 
 # Load model safely
+print("Loading model...")
 model_path = os.path.join(os.path.dirname(os.path.dirname(__file__)), 'model.pkl')
 model = pickle.load(open(model_path, 'rb'))
-
+print("Model loaded successfully")
 
 def home(request):
     return render(request, "index.html")
